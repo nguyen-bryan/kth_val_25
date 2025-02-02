@@ -11,6 +11,8 @@ import './App.css'
 function App() {
   const [currentPage, setCurrentPage] = useState('valentine');
 
+
+  // Delete these 2 functions to start from beginning
   useEffect(() => {
     const savedPage = localStorage.getItem('currentPage');
     if (savedPage) {
