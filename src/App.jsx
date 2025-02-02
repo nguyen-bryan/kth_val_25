@@ -1,35 +1,49 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React, { useState, useEffect } from 'react';
+import HomePage from './home_page/HomePage';
+import LoveBoard from './love_board/LoveBoard';
+import Valentine from './valentine/Valentine';
+import ValYes from './valentine/ValYes';
+import DateSelect from './date_select/DateSelect';
+import AllDate from './date_select/AllDate';
+
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [currentPage, setCurrentPage] = useState('valentine');
+
+  useEffect(() => {
+    const savedPage = localStorage.getItem('currentPage');
+    if (savedPage) {
+      setCurrentPage(savedPage);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('currentPage', currentPage);
+  }, [currentPage]);
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {currentPage === 'valentine' && (
+        <Valentine setCurrentPage={setCurrentPage} />
+      )}
+      {currentPage === 'val_yes' && (
+        <ValYes setCurrentPage={setCurrentPage} />
+      )}
+      {currentPage === 'date_select' && (
+        <DateSelect setCurrentPage={setCurrentPage} />
+      )}
+      {currentPage === 'all_date' && (
+        <AllDate setCurrentPage={setCurrentPage}/>
+        )}
+      {currentPage === 'home' && (
+        <HomePage setCurrentPage={setCurrentPage} />
+      )}
+      {currentPage === 'about' && (
+        <LoveBoard setCurrentPage={setCurrentPage}/>
+        )}
     </>
-  )
+  );
 }
 
-export default App
+export default App;

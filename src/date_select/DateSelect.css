@@ -1,0 +1,25 @@
+.choice_container {
+    margin: 10px;
+    border: 2px solid transparent;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.choice_container:hover {
+    border-color: #3229b6;
+}
+
+.choice_container:focus {
+    outline: none;
+}
+
+.choice_container:active {
+    border-color: transparent; /* Ensures the border is reset on click */
+}
+
+.game_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+  }

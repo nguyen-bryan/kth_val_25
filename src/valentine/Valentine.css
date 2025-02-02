@@ -1,0 +1,85 @@
+.ask {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.v_main{
+  display: flex;
+  flex-direction: column; /* Stacks elements vertically */
+  align-items: center; /* Centers items horizontally */
+  justify-content: center; /* Centers content vertically */
+  text-align: center; /* Ensures text alignment */
+  height: 100vh; /* Optional: Makes the container take the full viewport height */
+}
+
+.v_main h1 {
+  font-size: 100px;
+  color: #d6336c;
+  font-family: 'Arial', sans-serif;
+  margin: 10px;
+}
+
+.yes_button:hover {
+    border-color: #00cf2d;
+    background-color: #00cf2d;
+  }
+
+
+.no_button:hover{
+    border-color: #ff0000;
+    background-color: #ff0000;
+  }
+
+.cat_gif {
+    width: 100px;              /* Resize image to 50% of its original size */
+    max-width: 100%;         /* Ensure it doesn't exceed the container's width */
+    height: auto;            /* Maintain aspect ratio */
+    text-align: center;
+    margin:auto;
+    display: block;
+}
+
+.poggers {
+    width: 100px;              /* Resize image to 50% of its original size */
+    max-width: 100%;         /* Ensure it doesn't exceed the container's width */
+    height: auto;            /* Maintain aspect ratio */
+    text-align: center;
+    margin:auto;
+}
+
+.gigachad {
+  width: 100px;              /* Resize image to 50% of its original size */
+  max-width: 100%;         /* Ensure it doesn't exceed the container's width */
+  height: auto;            /* Maintain aspect ratio */
+  text-align: center;
+  margin:auto;
+}
+
+.img_div{
+  display: flex;  /* Enables Flexbox */
+  justify-content: center; /* Centers images horizontally */
+  align-items: center; /* Aligns images vertically */
+  gap: 10px; /* Adds space between images */
+  flex-wrap: nowrap; /* Prevents images from wrapping to the next line */
+}
+
+.v_yes{
+  display: flex;
+  flex-direction: column; /* Stacks elements vertically */
+  align-items: center; /* Centers items horizontally */
+  justify-content: center; /* Centers content vertically */
+  text-align: center; /* Ensures text alignment */
+  height: 100vh; /* Optional: Makes the container take the full viewport height */
+}
+
+.pls {
+  width: 250px; /* Adjust size as needed */
+  max-width: 100%; /* Ensures it doesn’t overflow */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Centers properly */
+  margin: 20px auto; /* Adds some space and centers it */
+}

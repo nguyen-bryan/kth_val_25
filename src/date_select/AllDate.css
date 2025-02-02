@@ -1,0 +1,73 @@
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .choice-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    max-width: 1000px; /* Prevents items from stretching too wide on large screens */
+    overflow-y: auto; /* Adds scroll if content overflows */
+    padding: 20px;
+  }
+  
+  .choice-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid #d6336c;
+    border-radius: 15px;
+    padding: 15px;
+    width: 150px;
+    height: 200px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  .choice-card:hover {
+    transform: scale(1.1);
+    background-color: #ffb3d9;
+  }
+  
+  .choice-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  /*
+  .winner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .winner-container h1 {
+    font-size: 30px;
+    color: #d6336c;
+  }
+  
+  .winner-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 15px;
+    border: 3px solid #d6336c;
+  }
+  */
+.date_title{
+    margin: 10px;
+}

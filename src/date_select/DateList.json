@@ -1,0 +1,11 @@
+[
+    { "word": "Sushi", "image": "/src/assets/sticky_1.png" },
+    { "word": "Pizza", "image": "/src/assets/sticky_1.png" },
+    { "word": "Burger", "image": "/src/assets/sticky_1.png" },
+    { "word": "Pasta", "image": "/src/assets/sticky_1.png" },
+    { "word": "Salad", "image": "/src/assets/sticky_1.png" },
+    { "word": "Tacos", "image": "/src/assets/sticky_1.png" },
+    { "word": "Steak", "image": "/src/assets/sticky_1.png" },
+    { "word": "Ice Cream", "image": "/src/assets/sticky_1.png" }
+  ]
+  

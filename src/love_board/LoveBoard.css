@@ -1,0 +1,120 @@
+.love {
+    background-image: url('../assets/bulletin_board.png'); /* Adjust path as needed */
+    background-repeat: no-repeat;
+    background-size: 120% auto; /* Make background 20% larger than container width */
+    background-position: center;
+    padding: 40px; /* Add space around the grid */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 750px; /* Ensures it spans the full height of the viewport */
+    width: 750px;
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+  
+.grid {
+    display: grid;
+    max-width: 80%;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin: 20px;
+}
+
+.note-container {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticky_note {
+    width: 50px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.sticky_note:hover {
+    transform: scale(1.05); /* Slight hover effect */
+}
+
+.popup-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+  }
+
+.popup {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1001;
+    width: 300px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+}
+
+.popup-content {
+    margin: auto; /* Center horizontally and vertically */
+    display: block; /* Ensure it's treated as a block element */
+    font-size: 50PX; /* Adjust font size for readability */
+    color: #333; /* Text color */
+    padding: 10px; /* Add internal spacing for text */
+    resize: none; /* Disable resizing for better layout control */
+    overflow: auto; /* Allow scrolling if the text overflows */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    outline: none; /* Removes default browser focus outline */
+}
+
+.close-button:focus {
+    outline: none; /* Ensures no focus outline appears */
+}
+
+.close-button img {
+    width: 120%;
+    height: 120%;
+    object-fit: contain;
+}
+
+.close-button:hover img {
+    transform: scale(1.1); /* Slight hover effect */
+    transition: transform 0.2s;
+}
+
