@@ -6,9 +6,9 @@ const ValYes = ({ setCurrentPage }) => {
     <div className="v_yes">
       <h1> YAYYYYYYYY</h1>
       <div className="img_div">
-        <img className='cat_gif' src='/kth_val_25/src/assets/happy_cat.gif'></img>
-        <img className='poggers' src='/kth_val_25/src/assets/poggers.png'></img>
-        <img className='gigachad' src='/kth_val_25/src/assets/gigachad.png'></img>
+        <img className='cat_gif' src='/assets/happy_cat.gif'></img>
+        <img className='poggers' src='/assets/poggers.png'></img>
+        <img className='gigachad' src='/assets/gigachad.png'></img>
       </div>
 
       <h2>Me looking at a gigachad</h2>
