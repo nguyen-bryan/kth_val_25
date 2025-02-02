@@ -16,7 +16,7 @@ const Valentine = ({ setCurrentPage }) => {
   return (
     <div className="v_main">
       <h1>Will you be my valentine?</h1>
-      <img className='pls' src='/src/assets/cat_flowers.png'></img>
+      <img className='pls' src='/kth_val_25/src/assets/cat_flowers.png'></img>
         <button className='yes_button'
           onClick={() => setCurrentPage('val_yes')} 
           style={{ ...yesButtonStyle, transform: `scale(${yesButtonScale})`, transition: 'transform 0.2s' }}
