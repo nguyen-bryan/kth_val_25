@@ -13,6 +13,7 @@ function App() {
 
 
   // Delete these 2 functions to start from beginning
+  /*
   useEffect(() => {
     const savedPage = localStorage.getItem('currentPage');
     if (savedPage) {
@@ -23,6 +24,8 @@ function App() {
   useEffect(() => {
     localStorage.setItem('currentPage', currentPage);
   }, [currentPage]);
+  */
+
 
   return (
     <>
@@ -41,7 +44,7 @@ function App() {
       {currentPage === 'home' && (
         <HomePage setCurrentPage={setCurrentPage} />
       )}
-      {currentPage === 'about' && (
+      {currentPage === 'love_board' && (
         <LoveBoard setCurrentPage={setCurrentPage}/>
         )}
     </>

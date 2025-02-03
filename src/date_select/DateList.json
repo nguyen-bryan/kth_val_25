@@ -9,8 +9,8 @@
     { "word": "We Cook Something", "image": "/kth_val_25/assets/foods/cooking.png"},
     { "word": "Japanese", "image": "/kth_val_25/assets/foods/japanese.png"},
     { "word": "KBBQ", "image": "/kth_val_25/assets/foods/kbbq.png"},
-    { "word": "Korean", "image": "/kth_val_25/assets/foods/Korean.png"},
-    { "word": "You're Planning Something", "image": "/kth_val_25/assets/foods/kt.png"}, 
-    { "word": "None of the above, I want something else", "image": "/kth_val_25/assets/foods/idk.png"}
+    { "word": "Korean", "image": "/kth_val_25/assets/foods/korean.png"},
+    { "word": "You're planning something", "image": "/kth_val_25/assets/foods/kt.png"}, 
+    { "word": "None, You want something else", "image": "/kth_val_25/assets/foods/idk.png"}
   ]
   

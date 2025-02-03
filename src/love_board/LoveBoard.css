@@ -1,5 +1,5 @@
 .love {
-    background-image: url('../assets/bulletin_board.png'); /* Adjust path as needed */
+    background-image: url('/kth_val_25/assets/bulletin_board.png'); /* Adjust path as needed */
     background-repeat: no-repeat;
     background-size: 120% auto; /* Make background 20% larger than container width */
     background-position: center;

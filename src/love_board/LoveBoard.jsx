@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './LoveBoard.css';
 import lovelist from './lovelist.json';
+import bulletin_board from '/src/assets/bulletin_board.png'
 import stickynote1 from '/src/assets/sticky_1.png';
 import stickynote2 from '/src/assets/sticky_2.png';
 import stickynote3 from '/src/assets/sticky_3.png';
@@ -75,6 +76,18 @@ const LoveBoard = ({ setCurrentPage }) => {
  
 
   return (
+    <div>
+      <img src='/kth_val_25/assets/dancing_cat.gif'></img>
+      <h1> This part is still a work in progress :D</h1>
+      <h2> Come back Febuary 14th for some more (hopefully I finish)</h2>
+      <button className='next_button'
+            onClick={() => setCurrentPage('all_date')} 
+            >
+            Back
+          </button>
+    
+    </div>
+    /*
     <div className="love">
       <button onClick={() => setCurrentPage('home')}>Go to Home Page</button>
       {popupVisible && clickedNote && (
@@ -91,7 +104,7 @@ const LoveBoard = ({ setCurrentPage }) => {
               }}
             >
               <div className="popup-content">
-                <p>{clickedNote[1].text}</p> {/* Display the text in popup */}
+                <p>{clickedNote[1].text}</p> {}
                 <button className="close-button" onClick={closePopup}>
                   <img src="/src/assets/arrow.png" alt="Close" />
                 </button>
@@ -103,6 +116,7 @@ const LoveBoard = ({ setCurrentPage }) => {
 
       {renderGrid()}
     </div>
+    */
   );
 };
 

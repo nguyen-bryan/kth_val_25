@@ -36,24 +36,33 @@ const DateSelectAll = ({ setCurrentPage }) => {
         </button>
         </div>
       ) : (
-        <div className="choice-grid">
-          {items.map((item) => (
-            <button
-              key={item.word}
-              className="choice-card"
-              onClick={() => handleChoice(item)}
+        <div>
+          <div className="choice-grid">
+            {items.map((item) => (
+              <button
+                key={item.word}
+                className="choice-card"
+                onClick={() => handleChoice(item)}
+              >
+                <img src={item.image} alt={item.word} className="choice-image" />
+                <p>{item.word}</p>
+              </button>
+            ))}
+
+          </div>
+          <button className='next_button'
+            onClick={() => setCurrentPage('love_board')} 
             >
-              <img src={item.image} alt={item.word} className="choice-image" />
-              <p>{item.word}</p>
-            </button>
-          ))}
-        </div>
+            Next
+          </button>
+          <button className='back_button'
+            onClick={() => setCurrentPage('val_yes')} 
+            >
+            Back
+          </button>
+      </div>
       )}
-      <button className='next_button'
-          onClick={() => setCurrentPage('val_yes')} 
-          >
-          Back
-        </button>
+      
     </div>
   );
 };
