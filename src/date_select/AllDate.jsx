@@ -26,7 +26,7 @@ const DateSelectAll = ({ setCurrentPage }) => {
         </button>
       {selectedItem ? (
         <div className="winner-container">
-          <h1>Winner: {selectedItem.word}!</h1>
+          <h1>You chose: {selectedItem.word}!</h1>
           <img src={selectedItem.image} alt={selectedItem.word} className="winner-image" />
           <h3> Please send a picture of this to Bryan. He didn't set up a way to actually receieve what you chose.</h3>
           <button className='next_button'
