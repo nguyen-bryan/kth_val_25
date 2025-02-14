@@ -16,11 +16,11 @@ const Transition = ({ setCurrentPage }) => {
         allowFullScreen
       ></iframe>
       <button className="trans_back_button" onClick={() => setCurrentPage('all_date')}>
-        <img src="/assets/arrow.png" alt="Close" />
+        <img src="/kth_val_25/assets/arrow.png" alt="Close" />
       </button>
       <h1> Welcome home :DDD</h1>
       <button className="trans_next_button" onClick={() => setCurrentPage('home')}>
-        <img src="/assets/arrow.png" alt="Close" />
+        <img src="/kth_val_25/assets/arrow.png" alt="Close" />
       </button>
     </div>
   );
