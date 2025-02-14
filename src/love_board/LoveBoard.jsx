@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './LoveBoard.css';
 import lovelist from './lovelist.json';
-import bulletin_board from '/kth_val_25/assets/bulletin_board2.jpg'
-import stickynote1 from '/kth_val_25/assets/sticky_1.png';
-import stickynote2 from '/kth_val_25/assets/sticky_2.png';
-import stickynote3 from '/kth_val_25/assets/sticky_3.png';
+import stickynote1 from '/assets/sticky_1.png';
+import stickynote2 from '/assets/sticky_2.png';
+import stickynote3 from '/assets/sticky_3.png';
 
 const LoveBoard = ({ setCurrentPage }) => {
   const [notes, setNotes] = useState([]);
@@ -93,7 +92,7 @@ const LoveBoard = ({ setCurrentPage }) => {
     <div className="love">
       <h1> 50 Things I Love About Katie</h1>
       <button className="lb_back_button" onClick={() => setCurrentPage('home')}>
-        <img src="/kth_val_25/src/assets/arrow.png" alt="Close" />
+        <img src="/assets/arrow.png" alt="Close" />
       </button>
       {popupVisible && clickedNote && (
         <div>
@@ -111,7 +110,7 @@ const LoveBoard = ({ setCurrentPage }) => {
               <div className="popup-content">
                 <p>{clickedNote[1].text}</p> {}
                 <button className="close-button" onClick={closePopup}>
-                  <img src="/kth_val_25/src/assets/arrow.png" alt="Close" />
+                  <img src="/assets/arrow.png" alt="Close" />
                 </button>
               </div>
             </div>

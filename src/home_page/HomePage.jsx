@@ -5,7 +5,7 @@ const HomePage = ({ setCurrentPage }) => {
   return (
     <div className="home">
       <button className="hp_back_button" onClick={() => setCurrentPage('transition')}>
-        <img src="/kth_val_25/src/assets/arrow.png" alt="Close" />
+        <img src="/assets/arrow.png" alt="Close" />
       </button>
       <button className="pb_button" onClick={() => setCurrentPage('plan_book')} />
       <button className="lb_button" onClick={() => setCurrentPage('love_board')} />

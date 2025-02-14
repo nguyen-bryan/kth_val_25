@@ -17,22 +17,22 @@ const PictureFrame = ({ setCurrentPage }) => {
   return (
     <div className="picture-frame">
       <button className="pf_back_button" onClick={() => setCurrentPage('home')}>
-        <img src="/kth_val_25/src/assets/arrow.png" alt="Close" />
+        <img src="/assets/arrow.png" alt="Close" />
       </button>
 
       <button
         className="photo photo-1"
-        onClick={() => openImage('/kth_val_25/assets/pic_1.jpg')}
+        onClick={() => openImage('/assets/pic_1.jpg')}
       />
       
       <button
         className="photo photo-2"
-        onClick={() => openImage('/kth_val_25/assets/pic_2.jpg')}
+        onClick={() => openImage('/assets/pic_2.jpg')}
       />
 
       <button
         className="photo photo-3"
-        onClick={() => openImage('/kth_val_25/assets/pic_3.jpg')}
+        onClick={() => openImage('/assets/pic_3.jpg')}
       />
 
       {selectedImage && (

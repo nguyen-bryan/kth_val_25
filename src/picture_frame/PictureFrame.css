@@ -5,7 +5,7 @@
     overflow: hidden;
     width: 100vw;
     height: 100vh;
-    background-image: url('/kth_val_25/assets/picture_frames.jpg'); /* Adjust the path */
+    background-image: url('/assets/picture_frames.jpg'); /* Adjust the path */
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

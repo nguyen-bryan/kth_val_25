@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./PlanBook.css";
 import bookData from "./bookData.json"; // JSON containing page lists
 
-import arrowLeft from "/kth_val_25/assets/arrow.png";
-import arrowRight from "/kth_val_25/assets/arrow.png";
+import arrowLeft from "/assets/arrow.png";
+import arrowRight from "/assets/arrow.png";
 
 const PlanBook = ({ setCurrentPage }) => {
   const [bookPage, setBookPage] = useState(0); // Renamed from currentPage

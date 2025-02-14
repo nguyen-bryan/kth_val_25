@@ -1,7 +1,7 @@
 .home {
     width: 100vw;
     height: 100vh;
-    background-image: url('/kth_val_25/assets/room.jpg'); /* Adjust the path */
+    background-image: url('/assets/room.jpg'); /* Adjust the path */
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@
   .flower {
     width: 100vw;
     height: 100vh;
-    background-image: url('/kth_val_25/assets/flowers.jpg'); /* Adjust the path */
+    background-image: url('/assets/flowers.jpg'); /* Adjust the path */
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
