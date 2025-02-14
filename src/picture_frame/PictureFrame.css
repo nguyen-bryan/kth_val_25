@@ -1,0 +1,91 @@
+.picture-frame {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/kth_val_25/assets/picture_frames.jpg'); /* Adjust the path */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; /* Centers the title */
+    align-items: center;
+    position: relative; /* Allows absolute positioning for child elements */
+    flex-direction: column;
+  }
+  
+  /* Styling for images */
+  .photo {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background: transparent;
+  }
+  
+  .photo:hover {
+    transform: scale(1.1);
+    border: black 2px solid;
+  }
+  
+  /* Positioning each photo */
+  .photo-1 {
+    top: 36.5%;
+    left: 33.5%;
+    width: 9.5%;
+    height: 28%;
+  }
+  
+  .photo-2 {
+    top: 40.4%;
+    left: 46.1%;
+    width: 8.3%;
+    height: 24%;
+  }
+  
+  .photo-3 {
+    top: 42.8%;
+    left: 57.8%;
+    width: 8.8%;
+    height: 21.5%;
+  }
+  
+  /* Fullscreen Modal */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-image {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+  }
+  
+  .pf_back_button {
+    width: 75px;
+    height: 75px;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    top: 8%;
+    left: 28%;
+    position: absolute;
+}
+
+.pf_back_button img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}

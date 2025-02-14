@@ -5,6 +5,10 @@ import Valentine from './valentine/Valentine';
 import ValYes from './valentine/ValYes';
 import DateSelect from './date_select/DateSelect';
 import AllDate from './date_select/AllDate';
+import PlanBook from './plan_book/PlanBook';
+import PictureFrame from './picture_frame/PictureFrame';
+import Transition from './transition_page/Transition';
+import Flower from './home_page/Flower';
 
 import './App.css'
 
@@ -46,6 +50,20 @@ function App() {
       )}
       {currentPage === 'love_board' && (
         <LoveBoard setCurrentPage={setCurrentPage}/>
+        )}
+      {currentPage === 'plan_book' && (
+        <PlanBook setCurrentPage={setCurrentPage}/>
+        )}
+      {currentPage === 'picture_frame' && (
+        <PictureFrame setCurrentPage={setCurrentPage}/>
+        )}
+
+        {currentPage === 'transition' && (
+        <Transition setCurrentPage={setCurrentPage}/>
+        )}
+
+      {currentPage === 'flower' && (
+        <Flower setCurrentPage={setCurrentPage}/>
         )}
     </>
   );

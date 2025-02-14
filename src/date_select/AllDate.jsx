@@ -51,7 +51,7 @@ const DateSelectAll = ({ setCurrentPage }) => {
 
           </div>
           <button className='next_button'
-            onClick={() => setCurrentPage('love_board')} 
+            onClick={() => setCurrentPage('transition')} 
             >
             Next
           </button>
