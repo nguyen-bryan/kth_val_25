@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./PlanBook.css";
 import bookData from "./bookData.json"; // JSON containing page lists
 
-import bookImage from "/kth_val_25/assets/book.png";
 import arrowLeft from "/kth_val_25/assets/arrow.png";
 import arrowRight from "/kth_val_25/assets/arrow.png";
 
