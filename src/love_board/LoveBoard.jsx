@@ -92,7 +92,7 @@ const LoveBoard = ({ setCurrentPage }) => {
     <div className="love">
       <h1> 50 Things I Love About Katie</h1>
       <button className="lb_back_button" onClick={() => setCurrentPage('home')}>
-        <img src="/assets/arrow.png" alt="Close" />
+        <img src="/kth_val_25/assets/arrow.png" alt="Close" />
       </button>
       {popupVisible && clickedNote && (
         <div>
@@ -110,7 +110,7 @@ const LoveBoard = ({ setCurrentPage }) => {
               <div className="popup-content">
                 <p>{clickedNote[1].text}</p> {}
                 <button className="close-button" onClick={closePopup}>
-                  <img src="/assets/arrow.png" alt="Close" />
+                  <img src="/kth_val_25/assets/arrow.png" alt="Close" />
                 </button>
               </div>
             </div>
